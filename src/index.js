@@ -7,14 +7,7 @@ import VideoDetail from './components/video_detail';
 
 const API_KEY = 'AIzaSyDUuanHr48uaZruk_fDUZi1p2vH30gGT18';
 
-//Create a new component which produces some HTML
-//const App = () => {
-//	return (
-//		<div>
-//			<SearchBar />
-//		</div>
-//	);
-//}
+
 class App extends Component{
 	constructor(props){
 		super(props);
@@ -22,7 +15,7 @@ class App extends Component{
 			videos : [],
 			selectedVideo : null
 		};
-		this.videoSearch('Age of Empires 2');
+		this.videoSearch('Age of Empires 2 The Viper');
 	}	
 
 	videoSearch(term){
@@ -46,5 +39,5 @@ class App extends Component{
 	}	   	
 }
 
-// Take the above component and move it into the DOM
+
 ReactDOM.render(<App />, document.querySelector('.container'));

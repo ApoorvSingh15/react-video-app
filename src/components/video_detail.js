@@ -1,6 +1,7 @@
 import React from 'react';
 
 const VideoDetail = ({video}) => {
+	// added default condition
 	if(!video){
 		return <div className="loader"></div>;
 	}
@@ -19,5 +20,7 @@ const VideoDetail = ({video}) => {
 	);
 
 };
+
+// conditional rendering
 
 export default VideoDetail;

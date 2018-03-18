@@ -1,14 +1,17 @@
 import React, {Component} from 'react';
 
 
-// const SearchBar = () => {						//Method : 1
-// return <input />
-// };
-export default class SearchBar extends Component{					//Method : 2
+export default class SearchBar extends Component{				
 	constructor(props){
 		super(props);
 		this.state = {term : ''}
 	}
+
+	onInputChange(term) {
+		this.setState({ term });
+		this.props.onSearchTermChange(term);
+	}	
+	// the search bar main component
 	render(){
 		return (
 			<div className = "search-bar">
@@ -19,8 +22,5 @@ export default class SearchBar extends Component{					//Method : 2
 		);
 	}
 
-	onInputChange(term){
-		this.setState({term});
-		this.props.onSearchTermChange(term);
-	}	
+	
 }

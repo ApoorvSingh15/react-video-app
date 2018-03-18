@@ -10,7 +10,7 @@ html{
 }
 
 
-
+/* added border shadow */
 .search-bar input{
 	width : 75%;
 	-moz-box-shadow:    2px 2px 4px 5px #ccc;
